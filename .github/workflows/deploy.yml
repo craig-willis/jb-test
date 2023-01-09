@@ -20,7 +20,7 @@ jobs:
           run: jupyter-book build --all .
     - name: Create trov folder
       run: |
-        mkdir -p _build/html/specifications/trov/0.1
+        mkdir -p ${{ github.workspace }}/_build/html/specifications/trov/0.1
     - name: Build trov site with widoco
       uses: addnab/docker-run-action@v3
       with: 
