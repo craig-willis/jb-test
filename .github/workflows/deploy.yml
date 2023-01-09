@@ -18,18 +18,6 @@ jobs:
           image: craigwillis/jupyter-book:latest
           options: -v ${{ github.workspace }}:/src
           run: jupyter-book build --all .
-    - name: Create trov folder
-      run: |
-        mkdir -p ${{ github.workspace }}/_build/html/specifications/trov/0.1
-    - name: Build trov site with widoco
-      uses: addnab/docker-run-action@v3
-      with: 
-          image: dgarijo/widoco
-          options: | 
-              -v ${{ github.workspace }}/specifications:/usr/local/widoco/in
-              -v ${{ github.workspace }}/_build/html/specifications/trov/0.1/:/usr/local/widoco/out
-          run: -ontFile in/trov/$(TROV_VERSION)/trov.ttl -outFolder out -rewriteAll
-
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3.6.1
