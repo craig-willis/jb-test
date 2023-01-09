@@ -1,0 +1,9 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/trov/0.1/>
+  a owl:Ontology ;
+  owl:versionIRI <https://w3id.org/trov/0.1/> ;
+  rdfs:comment "This document defines vocabulary for describing a Transparent Research Object (TRO)"@en ;
+  rdfs:label "Transparent Research Object Vocabulary"@en ;
+  owl:versionInfo "Version 0.1" .

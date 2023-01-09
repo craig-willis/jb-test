@@ -1,0 +1,23 @@
+### Overview
+
+The TRACE project is addressing a key challenge to ensuring the transparency of
+published computational research: 
+
+
+**How can we trust the integrity of results from research that relies on
+computations without repeating them?**
+
+
+The TRACE project is addressing challenges in trusting and verifying the results
+of computational research. The integrity of results is uncertain when their
+lineage or production cannot be validated, but verification through repeating
+executions is expensive and inefficient -- when possible. TRACE is developing a
+model of certified transparency whereby the original execution of a
+computational workflow is certified by the system on which they were run.
+
+### Acknowledgements
+Funding for the project is provided by the National Science Foundation under
+grants 2209629, 2209630, and 2209628.
+
+```{tableofcontents}
+```
