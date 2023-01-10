@@ -334,13 +334,13 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#transparency-certified-research-objects-tro">
-   Transparency-Certified Research Objects (TRO)
+  <a class="reference internal nav-link" href="#trace-system-certificate">
+   TRACE System Certificate
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#trace-system-certificate">
-   TRACE System Certificate
+  <a class="reference internal nav-link" href="#transparency-certified-research-objects-tro">
+   Transparency-Certified Research Objects (TRO)
   </a>
  </li>
 </ul>
@@ -368,13 +368,13 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#transparency-certified-research-objects-tro">
-   Transparency-Certified Research Objects (TRO)
+  <a class="reference internal nav-link" href="#trace-system-certificate">
+   TRACE System Certificate
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#trace-system-certificate">
-   TRACE System Certificate
+  <a class="reference internal nav-link" href="#transparency-certified-research-objects-tro">
+   Transparency-Certified Research Objects (TRO)
   </a>
  </li>
 </ul>
@@ -392,28 +392,35 @@ title="Print to PDF"
 <p>The TRACE project is developing a set of infrastructure elements that can be
 employed by system owners to:</p>
 <ol class="simple">
-<li><p>Declare the dimensions of computational transparency supported by their
-platform.</p></li>
-<li><p>Certify that a specific computational workflow was executed on the platform.</p></li>
-<li><p>Bundle artifacts along records of their execution and certify them for
+<li><p>declare the dimensions of computational transparency supported by their
+platform;</p></li>
+<li><p>certify that a specific computational workflow was executed on the platform; and</p></li>
+<li><p>bundle artifacts along records of their execution and certify them for
 dissemination.</p></li>
 </ol>
-<p>At the core of the TRACE model is the <a class="reference internal" href="#element-trace-system"><span class="std std-ref">Transparency-Certified System (TRACE
-System)</span></a>. TRACE Systems specify how transparency is
-supported by their platform via a <a class="reference internal" href="#element-trace-certificate"><span class="std std-ref">TRACE System Certificate</span></a>.
-TRACE Systems produce <a class="reference internal" href="#element-tro"><span class="std std-ref">Transparency-Certified Research Objects</span></a>,
-which can be</p>
 <section id="transparency-certified-system-trace-system">
 <span id="element-trace-system"></span><h2>Transparency-Certified System (TRACE System)<a class="headerlink" href="#transparency-certified-system-trace-system" title="Permalink to this headline">#</a></h2>
-<p>We consider a TRACE System to be any structured process that can be used to
-generate TRO (described below). This may be a specific computational platform; a
-special queue in a job scheduling system; or a person-centric documented
-workflow. The purpose of the TRACE System is to certify that a computational
-workflow was executed and to convey details about how the system ensures results
-transparency.</p>
+<p>At the core of the TRACE model is the Transparency-Certified System (TRACE
+System).  We consider a TRACE System to be any structured
+process that can be used to generate TRO (described below). This may be a
+specific computational platform; a special queue in a job scheduling system; or
+a person-centric documented workflow. The purpose of the TRACE System is to
+certify that a computational workflow was executed and to convey details about
+how the system ensures results transparency.</p>
+</section>
+<section id="trace-system-certificate">
+<span id="element-trace-certificate"></span><h2>TRACE System Certificate<a class="headerlink" href="#trace-system-certificate" title="Permalink to this headline">#</a></h2>
+<p>TRACE Systems specify how transparency is supported by their platform via a
+TRACE System Certificate.</p>
+<p>A TRACE System Certificate is a structured document that describes how TROs are
+produced by a TRACE System and how the system ensures results transparency and
+reproducibility. TRACE System Certificates are digitally signed by the system
+owner and supported by the system owner’s reputation.</p>
 </section>
 <section id="transparency-certified-research-objects-tro">
 <span id="element-tro"></span><h2>Transparency-Certified Research Objects (TRO)<a class="headerlink" href="#transparency-certified-research-objects-tro" title="Permalink to this headline">#</a></h2>
+<p>TRACE Systems produce <a class="reference internal" href="#element-tro"><span class="std std-ref">Transparency-Certified Research Objects</span></a>,
+which can be</p>
 <p>A TRO is an aggregation of computational research artifacts, records of their
 execution within a particular system, technical metadata about their contents,
 digitally signed by the system within which they are executed. The central
@@ -423,13 +430,6 @@ computations. TROs are produced by TRACE Systems and may be consumed by other
 researchers, replicators, or reviewers. The TRO will be signed by the system
 owner using a digital signature. The integrity of the TRO can be verified using
 the affixed signature.</p>
-</section>
-<section id="trace-system-certificate">
-<span id="element-trace-certificate"></span><h2>TRACE System Certificate<a class="headerlink" href="#trace-system-certificate" title="Permalink to this headline">#</a></h2>
-<p>A TRACE System Certificate is a structured document that describes how TROs are
-produced by a TRACE System and how the system ensures results transparency and
-reproducibility. TRACE System Certificates are digitally signed by the system
-owner and supported by the system owner’s reputation.</p>
 </section>
 </section>
 
