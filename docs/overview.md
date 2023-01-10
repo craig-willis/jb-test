@@ -5,14 +5,14 @@ research can trust results without necessarily repeating the computations.
 Instead of relying on researchers to
 [self-certify](barriers-self-certification), TRACE requires that the operators
 or owners of systems that researchers use adopt key practices to aid in the
-production of transparenty and trustworthy artifacts.
+production of transparent and trustworthy artifacts.
 
 This includes:
 
 * Providing information about the computing platforms themselves, including
   specific details about how computational transparency is supported.
 * Packaging and signing resulting artifacts along with records of their
-  execution, ideally using a standard format.
+  execution using a standard format.
 
 The first is motivated by the need to convey to consumers of research
 information about the systems within which results were obtained, particularly
